@@ -1,4 +1,4 @@
-// NOTE: Don't use this token, replace it with your own client access token.
+ // NOTE: Don't use this token, replace it with your own client access token.
 
 //Ceate a application tocke from https://dribbble.com/account/applications
 $.jribbble.setToken('YOUR-TOKEN_GOES_HERE');
