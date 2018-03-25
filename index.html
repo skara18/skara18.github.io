@@ -1,638 +1,433 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-    <head>
-        <title>Boxus - Html Responsive One Page Template</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="Template by Colorlib" />
-        <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
-        <meta name="author" content="Colorlib" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!DOCTYPE html>
+<html lang="en">
 
-        <link rel="shortcut icon" href="images/favicon.png" />
-        <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900|Montserrat:400,700|PT+Serif' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css"  href='css/clear.css' />
-        <link rel="stylesheet" type="text/css"  href='css/common.css' />
-        <link rel="stylesheet" type="text/css"  href='css/font-awesome.min.css' />
-        <link rel="stylesheet" type="text/css"  href='css/carouFredSel.css' />
-        <link rel="stylesheet" type="text/css"  href='css/prettyPhoto.css' />
-        <link rel="stylesheet" type="text/css"  href='css/sm-clean.css' />
-        <link rel="stylesheet" type="text/css"  href='style.css' />
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet"> 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!--[if lt IE 9]>
-                <script src="js/html5.js"></script>
-        <![endif]-->
+    <!-- ===========================
+    THEME INFO
+    =========================== -->
+    <meta name="description" content="A free Bootstrap powerd HTML template exclusively crafted for the super lazy designers like me who designed thousand of websites till today but never got a chance to build one himself.">
+    <meta name="keywords" content="Free Portfolio Template, Free Template, Free Bootstrap Template, Dribbble Portfolio Template, Free HTML5 Template">
+    <meta name="author" content="EvenFly Team">
 
-    </head>
-    <body>
+    <!-- DEVEOPER'S NOTE:
+    This is a free Bootstrap powered HTML template from EvenFly. Feel free to download, modify and use it for yourself or your clients as long there is no money involved.
+    
+    Please don't try to sale it from anywhere; because I want it to be free, forever. If you sale it, That's me who deserves the money, not you :)
+    -->
 
-        <!-- Preloader Gif -->
-        <table class="doc-loader">
-            <tr>
-                <td>
-                    <img src="images/ajax-document-loader.gif" alt="Loading..." />
-                </td>
-            </tr>
-        </table>
+    <!-- ===========================
+    SITE TITLE
+    =========================== -->
+    <title>Drifolio Bootstrap</title>
+    <!-- This is what you see on your browser tab-->
 
-        <!-- Menu -->
-        <div class="menu-wrapper center-relative">
-            <nav id="header-main-menu">
-                <div class="mob-menu">MENU</div>
-                <ul class="main-menu sm sm-clean">
-                    <li><a href="#home">Home</a></li>
+    <!-- ===========================
+    FAVICONS
+    =========================== -->
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-ipad-retina.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-iphone-retina.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-iphone.png" />
+
+    <!-- ===========================
+    STYLESHEETS
+    =========================== -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- ===========================
+    ICONS: 
+    =========================== -->
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+
+    <!-- ===========================
+    GOOGLE FONTS
+    =========================== -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Antic|Raleway:300">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ===========================
+    GOOGLE ANALYTICS (Optional)
+    =========================== -->
+
+    <!--Replace this line with your analytics code-->
+    
+    <!-- Analytics end-->
+
+</head>
+
+<body data-spy="scroll">
+
+    <header>
+        <!-- ===========================
+        HERO AREA
+        =========================== -->
+        <div id="hero">
+            <div class="container herocontent">
+                <h2 class="wow fadeInUp" data-wow-duration="2s">Drifolio the Awesome</h2>
+                <h4 class="wow fadeInDown" data-wow-duration="3s">Exclusively crafted for the super lazy designers like me who designed thousand of websites till today but never got a chance to build one himself.</h4>
+            </div>
+
+            <!-- Featured image on the Hero area -->
+            <img class="heroshot wow bounceInUp" data-wow-duration="4s" src="img/hero-img.png" alt="Featured Work">
+        </div>
+        <!--HERO AREA END-->
+
+        <!-- ===========================
+         NAVBAR START
+         =========================== -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                           <span class="sr-only">Toggle navigation</span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                        </button>
+
+                    <a class="navbar-brand" href="#hero">
+                        <!-- Replace Drifolio Bootstrap with your Site Name and remove icon-grid to remove the placeholder icon -->
+                        <span class="brandicon icon-grid"></span>
+                        <span class="brandname">Drifolio Bootstrap</span>
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!--YOUR NAVIGATION ITEMS STRAT BELOW-->
+                        <li><a href="#about"><span class="btnicon icon-user"></span>About</a></li>
+                        <li><a href="#services"><span class="btnicon icon-cup"></span>Services</a></li>
+                        <li><a href="#portfolio"><span class="btnicon icon-rocket"></span>Portfolio</a></li>
+                        <li><a href="#testimonials"><span class="btnicon icon-bubble"></span>Testimonials</a></li>
+
+                        <!--don't forget to replace the email address below with yours-->
+                        <li><a href="mailto:you@yourmail.com"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
+                        <li class="active"><a href=""><span class="btnicon icon-cloud-download"></span>Download CV</a></li>
+                    </ul>
+
+                </div>
+                <!--.nav-collapse -->
+            </div>
+        </nav>
+        <!--navbar end-->
+    </header>
+    <!--header end-->
+
+    <!-- ===========================
+    FEATURED CLIENTS SECTION START
+    =========================== -->
+    <div id="clients">
+        <div class="container">
+            <div class="col-md-3">
+                <h4>Proudly worked with:</h4>
+            </div>
+            <div class="col-md-9">
+                <ul>
+                    <!--CLIENTS LOGO-->
+                    <li><img src="img/payoneer.png" alt="Payoneer"></li>
+                    <li><img src="img/amazon.png" alt="Amazon"></li>
+                    <li><img src="img/elance-odesk.png" alt="Elance-oDesk"></li>
+                    <li><img src="img/curb.png" alt="Curb Envy"></li>
+                </ul>
+                <!--CLIENTS LOGO END-->
+            </div>
+        </div>
+        <hr>
+        <!-- SECTION SEPARETOR LINE -->
+    </div>
+    <!--FEATURED CLIENTS SECTION END-->
+
+
+    <!-- ===========================
+    ABOUT SECTION START
+    =========================== -->
+    <div id="about" class="container">
+
+        <!-- LEFT PART OF THE ABOUT SECTION -->
+        <div class="col-md-6">
+            <div class="row">
+                <h2 class="wow fadeInDown" data-wow-duration="2s">I'm Mamun Srizon from Bangladesh</h2>
+
+                <h4 class="wow fadeInUp" data-wow-duration="3s">A freelance UI/UX wizard as well as a Daydreamer who workes on the Graveyard Shift and sleeps all the day!</h4>
+
+                <p class="wow fadeInDown" data-wow-duration="3s">I'm gonna build me an airport, put my name on it. Why, Michael? So you can fly away from your feelings? I don't care if it takes from now till the end of Shrimpfest.</p>
+                <p class="wow fadeInDown" data-wow-duration="3s">Bugger bag egg's old boy willy jolly scrote munta skive pillock, bloody shambles nose rag blummin' scrote narky ever so, Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                <a class="dribbble-follow-button wow bounce" href="http://dribbble.com/srizon">Follow</a>
+            </div>
+            <!-- ABOUT INFO END -->
+
+
+            <div class="myapps row">
+                <h5>Tools and apps I use everyday:</h5>
+
+                <ul>
+                    <!-- FAVORITE APP ICONS START -->
+                    <li><img class="wow animated bounceInUp" data-wow-duration="1s" src="img/photoshop.svg" alt="Photoshop"></li>
+                    <li><img class="wow bounceInUp" data-wow-duration="2s" src="img/illustrator.svg" alt="Illustrator"></li>
+                    <li><img class="wow bounceInUp" data-wow-duration="3s" src="img/flash.svg" alt="Adobe Flash"></li>
+                    <li><img class="wow animated bounceInUp" data-wow-duration="4s" src="img/after_effects.svg" alt="After Effects"></li>
+                    <li><img class="wow bounceInUp" data-wow-duration="5s" src="img/indesign.svg" alt="InDesign"></li>
+                </ul>
+                <!-- FAVORITE APP ICONS END -->
+            </div>
+        </div>
+        <!-- LEFT PART OF THE ABOUT SECTION END -->
+        <!--Left part end-->
+
+        <!-- RIGHT PART OF THE ABOUT SECTION -->
+        <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
+            <img src="img/user.png" alt="Mamun Srizon">
+        </div>
+        <!-- RIGHT PART OF THE ABOUT SECTION END -->
+    </div>
+    <!-- ABOUT SECTION END -->
+
+    <hr>
+    <!-- SECTION SEPARETOR LINE -->
+
+    <!-- ===========================
+    SERVICE SECTION START
+    =========================== -->
+    <div id="services" class="container">
+
+        <!-- SERVICE SECTION HEADING START -->
+        <div class="sectionhead  row wow fadeInUp">
+            <span class="bigicon icon-cup "></span>
+            <h3>This is what I can do for you</h3>
+            <hr class="separetor">
+        </div>
+        <!--SERVICE SECTION HEADING END-->
+
+        <!-- SERVICE ITEMS START -->
+        <div class="row">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                <img src="img/s1.png" alt="">
+                <h4>Responsive Web Design</h4>
+                <p>Grinder affogato, dark, sweet carajillo, flavour seasonal aroma single origin cream. Percolator. Eligendi impedit dolores nulla.</p>
+            </div>
+            <!-- ITEM END -->
+
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                <img src="img/s2.png" alt="">
+                <h4>Android App Design</h4>
+                <p>Grinder affogato, dark, sweet carajillo, flavour seasonal aroma single origin cream. Percolator. Eligendi impedit dolores nulla.</p>
+            </div>
+            <!-- ITEM END -->
+
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                <img src="img/s3.png" alt="">
+                <h4>iOS App Design</h4>
+                <p>Grinder affogato, dark, sweet carajillo, flavour seasonal aroma single origin cream. Percolator. Eligendi impedit dolores nulla.</p>
+            </div>
+            <!-- ITEM END -->
+
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                <img src="img/s4.png" alt="">
+                <h4>Windows App Design</h4>
+                <p>Grinder affogato, dark, sweet carajillo, flavour seasonal aroma single origin cream. Percolator. Eligendi impedit dolores nulla.</p>
+            </div>
+            <!-- ITEM END -->
+
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                <img src="img/s5.png" alt="">
+                <h4>Brand Identity Design</h4>
+                <p>Grinder affogato, dark, sweet carajillo, flavour seasonal aroma single origin cream. Percolator. Eligendi impedit dolores nulla.</p>
+            </div>
+            <!-- ITEM END -->
+
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                <img src="img/s6.png" alt="">
+                <h4>CMYK Print Design</h4>
+                <p>Grinder affogato, dark, sweet carajillo, flavour seasonal aroma single origin cream. Percolator. Eligendi impedit dolores nulla.</p>
+            </div>
+            <!-- ITEM END -->
+        </div>
+        <!-- SERVICE ITEMS END-->
+    </div>
+    <!-- SERVICE SECTION END -->
+
+    <!-- ===========================
+    PORTFOLIO SECTION START
+    =========================== -->
+    <div id="portfolio">
+        <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
+            <span class="bigicon icon-rocket"></span>
+            <h3>A few recent works</h3>
+            <hr class="separetor">
+        </div>
+        <!-- PORTFOLIO SECTION HEAD END -->
+
+        <!-- PORTFOLIO ITEMS START -->
+        <div class="portfolioitems container">
+            <div class="row">
+                <ul class="shots"></ul><!--CONFIGURE PORTFOLIO ON js/drifolio.js-->
+            </div>
+        </div>
+        <!-- PORTFOLIO ITEMS END -->
+
+        <!--Replace the URL below with your dribbble profile URL-->
+        <a class="btn btn-default wow fadeInUp" href="http://dribbble.com/srizon" role="button">
+            <span class="btnicon icon-social-dribbble"></span>
+            <span class="button_text">View all items</span>
+        </a>
+    </div>
+    <!-- PORTFOLIO SECTION END -->
+
+    <!-- ===========================
+    TESTIMONIAL SECTION START
+    =========================== -->
+    <div id="testimonials" class="container">
+        <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
+            <span class="bigicon icon-bubbles"></span>
+            <h3>This is what I love to listen</h3>
+            <h4>Expedita nobis natus doloribus blanditiis quos, atque voluptatem, veritatis soluta eveniet ea!</h4>
+            <hr class="separetor">
+        </div>
+        <!-- TESTIMONIAL SECTIONHEAD END -->
+
+        <!-- TESTIMONIAL ITEMS START -->
+        <div class="row">
+            <!-- 1ST TESTIMONIAL ITEM -->
+            <div class="col-md-6 wow bounceIn" data-wow-duration="2s">
+                <div class="clientsphoto">
+                    <img src="img/dan.jpg" alt="Dan">
+                </div>
+
+                <div class="quote">
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia et pariatur ipsam tempora officia ea iusto expedita, nulla, hic odit saepe repellat nesciunt dolorum, officiis laborum ad, aliquam. Quos, et.</p>
+                    </blockquote>
+                    <h5>Dan Cederholm</h5>
+                    <p>Co-Founder, Dribbble</p>
+                </div>
+            </div>
+            <!-- 1ST TESTIMONIAL ITEM END -->
+
+            <!-- 2ND TESTIMONIAL ITEM -->
+            <div class="col-md-6 wow bounceIn" data-wow-duration="3s">
+                <div class="clientsphoto">
+                    <img src="img/bill.jpg" alt="Bill">
+                </div>
+
+                <div class="quote">
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia et pariatur ipsam tempora officia ea iusto expedita, nulla, hic odit saepe repellat nesciunt dolorum, officiis laborum ad, aliquam. Quos, et. lorem</p>
+                    </blockquote>
+                    <h5>Bill S Kenney</h5>
+                    <p>Art Director at Focus Lab LLC.</p>
+                </div>
+            </div>
+            <!-- 2ND TESTIMONIAL ITEM END -->
+
+            <!-- 3RD TESTIMONIAL ITEM -->
+            <div class="col-md-6 wow bounceIn" data-wow-duration="3s">
+                <div class="clientsphoto">
+                    <img src="img/eric.png" alt="Eric">
+                </div>
+
+                <div class="quote">
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia et pariatur ipsam tempora officia ea iusto expedita, nulla, hic odit saepe repellat nesciunt dolorum, officiis laborum ad, aliquam. Quos, et.</p>
+                    </blockquote>
+                    <h5>Eric Hoffman</h5>
+                    <p>Principal Designer, JellyJar</p>
+                </div>
+            </div>
+            <!-- 3RD TESTIMONIAL ITEM END -->
+
+            <!-- 4TH TESTIMONIAL ITEM -->
+            <div class="col-md-6 wow bounceIn" data-wow-duration="2s">
+                <div class="clientsphoto">
+                    <img src="img/ramil.jpg" alt="Ramil">
+                </div>
+
+                <div class="quote">
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia et pariatur ipsam tempora officia ea iusto expedita, nulla, hic odit saepe repellat nesciunt dolorum, officiis laborum ad, aliquam. Quos, et.</p>
+                    </blockquote>
+                    <h5>Ramil Derogongun</h5>
+                    <p>Visual Designer, Bluroon</p>
+                </div>
+            </div>
+            <!-- 4TH TESTIMONIAL ITEM END -->
+        </div>
+    </div>
+    <!-- TESTIMONIAL SECTION END -->
+
+    <!-- ===========================
+    FOOTER START
+    =========================== -->
+    <footer>
+        <div class="container">
+            <span class="bigicon icon-speedometer "></span>
+
+            <div class="footerlinks">
+                <!-- FOOTER LINKS START -->
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#video">Video</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+
+                    <!--replace the email address below with your email address-->
+                    <li><a href="mailto:you@yourmail.com">Contact</a></li>
                 </ul>
-            </nav>
-        </div>
-
-
-
-        <!-- Home -->
-
-        <div id="home" class="section intro-page">
-            <div class="block content-1170 center-relative center-text">
-                <img class="top-logo" src="demo-images/logo.png" alt="Boxus" />
-                <br>
-                <h1 class="big-title">Skara 2018<span>Technical Symposium</span></h1>
-                <p class="title-desc">Keep your eyes on this star<br> and make your feet on career.</p>
             </div>
-        </div>
+            <!-- FOOTER LINKS END -->
 
-
-
-
-        <!-- Service -->
-
-        <div id="services" class="section">
-            <div class="block content-1170 center-relative">
-                <div class="section-title-holder left">
-                    <div class="section-num">
-                        <span>..1</span>
-                    </div>
-                    <h2 class="entry-title">About</h2>
-                </div>
-                <div class="section-content-holder right">
-                    <div class="content-wrapper">
-                        <script>
-                            var slider1_speed = "500";
-                            var slider1_auto = "false";
-                            var slider1_hover = "true";
-                        </script>
-                        <div class="image-slider-wrapper relative service slider1">
-                            <p><h1>Skara'2018</h1>
-Skara2K18 Technical Symposium is organized by department of Computer Science and Engineering, V.S.B Engineering College, Karur.
-
-The partakers of Skara2K18 get the knowledge about the dimensions of computer science. It would lead them to achieve career goal through the insight captured from this fest. Our target is to administer intelligence in the field of computer science. The technical and non technical events are made you to experience the world of adventure. This technical fest breeds them to grasp a coding power like a code gladiators.
-
-Apart from insights we also explore you to have a diversion, fun of spaces, edutainment, food procurement and so on. Early bird catches the flag. You still need a time to join in this wonderful calamity. Grab and enjoy the fest.</p>
-                            <div class = "clear"></div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class='clear'></div>
+            <div class="copyright">
+                <!-- FOOTER COPYRIGHT START -->
+                <p><a href="#">Drifolio</a> stands for Dribbble-Portolio. This is a free HTML template designed and coded by <a href="http://creativealiens.com">Creative Aliens</a>. All logo and images in this template used for preview purpose only. You are free to use the template but make sure to use your own images.</p>
             </div>
-        </div>
+            <!-- FOOTER COPYRIGHT END -->
 
-
-        <!-- Portfolio -->
-        <div id="portfolio" class="section">
-            <div class="block content-1170 center-relative">
-                <div class="section-title-holder right">
-                    <div class="section-num">
-                        <span>02</span>
-                    </div>
-                    <h2 class="entry-title">Portfolio</h2>
-                </div>
-                <div class="section-content-holder portfolio-holder left">
-                    <div class="grid" id="portfolio-grid">
-                        <div class="grid-sizer"></div>
-                        <div class="grid-item element-item p_one">
-                            <a href="single-portfolio.html">
-                                <img src="demo-images/portfolio_item_01.jpg" alt="">
-                                <div class="portfolio-text-holder">
-                                    <div class="portfolio-text-wrapper">
-                                        <p class="portfolio-type">
-                                            <img src="images/icon_post.svg" alt="">
-                                        </p>
-                                        <p class="portfolio-text">PSD MOCKUP</p>
-                                        <p class="portfolio-sec-text">Smart Watch</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="grid-item element-item p_one_half">
-                            <a href="single-portfolio2.html">
-                                <img src="demo-images/portfolio_item_02.jpg" alt="">
-                                <div class="portfolio-text-holder">
-                                    <div class="portfolio-text-wrapper">
-                                        <p class="portfolio-type">
-                                            <img src="images/icon_post.svg" alt="">
-                                        </p>
-                                        <p class="portfolio-text">PSD MOCKUP</p>
-                                        <p class="portfolio-sec-text">Smart Watch</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="grid-item element-item p_one_half">
-                            <a data-rel="prettyPhoto[gallery1]" href="demo-images/portfolio_item_08.jpg">
-                                <img src="demo-images/portfolio_item_08.jpg" alt="">
-                                <div class="portfolio-text-holder">
-                                    <div class="portfolio-text-wrapper">
-                                        <p class="portfolio-type">
-                                            <img src="images/icon_post.svg" alt="">
-                                        </p>
-                                        <p class="portfolio-text">PSD MOCKUP</p>
-                                        <p class="portfolio-sec-text">Smart Watch</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="grid-item element-item p_one">
-                            <a data-rel="prettyPhoto[gallery1]" href="demo-images/portfolio_item_05.jpg">
-                                <img src="demo-images/portfolio_item_05.jpg" alt="">
-                                <div class="portfolio-text-holder">
-                                    <div class="portfolio-text-wrapper">
-                                        <p class="portfolio-type">
-                                            <img src="images/icon_post.svg" alt="">
-                                        </p>
-                                        <p class="portfolio-text">PSD MOCKUP</p>
-                                        <p class="portfolio-sec-text">Smart Watch</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="clear"></div>
-                    <div class="block portfolio-load-more-holder">
-                        <a target="_self" class="more-posts">LOAD MORE</a>
-                        <img src="images/icon_infinity.svg" alt="Load more">
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <div class="clear"></div>
-        </div>
-
-
-        <!-- About -->
-        <div id="about" class="section">
-            <div class="block content-1170 center-relative">
-                <div class="section-title-holder left">
-                    <div class="section-num">
-                        <span>03</span>
-                    </div>
-                    <h2 class="entry-title">CRAFTERS</h2>
-                </div>
-                <div class="section-content-holder right">
-                    <div class="content-wrapper">
-                        <div class="content-title-holder">
-                            <p class="content-title">About</p>
-                        </div>
-                        <div class="one_half ">
-                            Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum <strong>dolor sit amet</strong> consectetur est adipisicing elit, sed do eiusmod tempor
-                        </div>
-                        <div class="one_half last ">
-                            <span style="color: #e54b76;"><strong>2001-2003 ·</strong></span> <span style="color:#727190;"><em>Art Studio Lorem Donec</em></span><br>
-                            <span style="color: #e54b76;"><strong>2003-2006 ·</strong></span> <span style="color:#727190;"><em>Per Set Web Site</em></span><br>
-                            <span style="color: #e54b76;"><strong>2006-2010 ·</strong></span> <span style="color:#727190;"><em>Setera Donec EstNunc</em></span><br>
-                            <span style="color: #e54b76;"><strong>2010-2013 ·</strong></span> <span style="color:#727190;"><em>Studio Labore Tempor</em></span><br>
-                            <span style="color: #e54b76;"><strong>2013-2016 ·</strong></span> <span style="color:#727190;"><em>Magna Ipsum Amet</em></span><br>
-                        </div><div class="clear"></div>
-                        <br>
-                        <br>
-                    </div>
-
-                    <div class="full-width ">
-                        <script>
-                            var aboutImage_speed = "500";
-                            var aboutImage_auto = "false";
-                            var aboutImage_hover = "true";
-                        </script>
-                        <div class="image-slider-wrapper relative img aboutImage">
-                            <a id="aboutImage_next" class="image_slider_next" href="#"></a>
-                            <div class="caroufredsel_wrapper">
-                                <ul id="aboutImage" class="image-slider slides">
-                                    <li><img src="demo-images/about_img_04.jpg" alt=""></li>
-                                    <li><img src="demo-images/about_img_05.jpg" alt=""></li>
-                                    <li><img src="demo-images/about_img_06.jpg" alt=""></li>
-                                </ul>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-
-                        <script>
-                            var team1_speed = "500";
-                            var team1_auto = "false";
-                            var team1_hover = "true";
-                        </script>
-                        <div class="image-slider-wrapper relative team team1">
-                            <a id="team1_next" class="image_slider_next" href="#"></a>
-                            <div class="caroufredsel_wrapper">
-                                <ul id="team1" class="image-slider slides">
-                                    <li>
-                                        <div class="member-content-holder">
-                                            <h4 class="member-name">Robert Williams</h4>
-                                            <p class="member-position">LEAD DESIGNER</p>
-                                            <div class="member-content">
-                                                Eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est lorem adipisicing elit, sed do eiusmod tempor polor sit amet consectetur.<br>
-                                            </div>
-                                        </div>
-                                        <div class="member-image-holder">
-                                            <img src="demo-images/about_img_01.jpg" alt="">
-                                        </div>
-                                        <div class="clear"></div>
-                                    </li>
-
-                                    <li>
-                                        <div class="member-content-holder">
-                                            <h4 class="member-name">John Doe</h4>
-                                            <p class="member-position">SEO MASTER</p>
-                                            <div class="member-content">
-                                                Eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est lorem adipisicing elit, sed do eiusmod tempor polor sit amet consectetur.<br>
-                                            </div>
-                                        </div>
-                                        <div class="member-image-holder">
-                                            <img src="demo-images/about_img_02.jpg" alt="">
-                                        </div>
-                                        <div class="clear"></div>
-                                    </li>
-
-                                    <li>
-                                        <div class="member-content-holder">
-                                            <h4 class="member-name">John Doe</h4>
-                                            <p class="member-position">PSD GURU</p>
-                                            <div class="member-content">
-                                                Eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est lorem adipisicing elit, sed do eiusmod tempor polor sit amet consectetur.<br>
-                                            </div>
-                                        </div>
-                                        <div class="member-image-holder">
-                                            <img src="demo-images/about_img_03.jpg" alt="">
-                                        </div>
-                                        <div class="clear"></div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </div>   <!-- end full-width div -->
-
-                </div>
-                <div class="clear"></div>
-            </div>
-        </div>
-
-
-        <!-- News -->
-        <div id="news" class="section">
-            <div class="block content-1170 center-relative">
-                <div class="section-title-holder right">
-                    <div class="section-num">
-                        <span>
-                            04
-                        </span>
-                    </div>
-                    <h2 class="entry-title">STORIES</h2>
-                </div>
-                <div class="section-content-holder left">
-                    <div class="content-wrapper">
-                        <div class="blog-holder block center-relative">
-
-                            <article class="relative blog-item-holder center-relative">
-                                <div class="num">01</div>
-                                <div class="info">
-                                    <div class="author vcard ">Robert Williams</div>
-                                    <div class="cat-links">
-                                        <ul>
-                                            <li><a href="#">BRANDING</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h3 class="entry-title">
-                                    <a href="#">Eiusmod tempor incididunt ut dolore magna labore eiusmod ipsum dolor</a>
-                                </h3>
-                                <div class="clear"></div>
-                            </article>
-
-                            <article class="relative blog-item-holder center-relative">
-                                <div class="num">02</div>
-                                <div class="info">
-                                    <div class="author vcard ">Jim Davis</div>
-                                    <div class="cat-links">
-                                        <ul>
-                                            <li><a href="#">TECH</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h3 class="entry-title">
-                                    <a href="#">Incididunt ut dolore magna labore eiusmod lorem ipsum dolor sit</a>
-                                </h3>
-                                <div class="clear"></div>
-                            </article>
-
-                            <article class="relative blog-item-holder center-relative">
-                                <div class="num">03</div>
-                                <div class="info">
-                                    <div class="author vcard ">Ann Peterson</div>
-                                    <div class="cat-links">
-                                        <ul>
-                                            <li><a href="#">CRAFTING</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h3 class="entry-title">
-                                    <a href="#">Labore eiusmod lorem ipsum dolor sit amet nunc labore incididunt ut dolore</a>
-                                </h3>
-                                <div class="clear"></div>
-                            </article>
-
-                            <article class="relative blog-item-holder center-relative">
-                                <div class="num">04</div>
-                                <div class="info">
-                                    <div class="author vcard ">Robert Williams</div>
-                                    <div class="cat-links">
-                                        <ul>
-                                            <li><a href="#">CRAFTING</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h3 class="entry-title">
-                                    <a href="#">Dolor sit amet nunc labore incididunt ut dolore magna labore eiusmod</a>
-                                </h3>
-                                <div class="clear"></div>
-                            </article>
-
-                            <div class="latest-post-bottom-text">
-                                <a href="#">GO TO BLOG</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-
-            <div class="block content-1170 center-relative">
-                <div class="extra-content-left">
-                    <script> var text1_speed = "500";
-                        var text1_auto = "false";
-                        var text1_hover = "true";
-                    </script>
-                    <div class="text1 testimonial-slider-holder slider-holder">
-                        <div class="caroufredsel_wrapper">
-                            <ul id="text1" class="slides testimonial">
-                                <li>
-                                    <div class="testimonial-content">
-                                        <p class="testimonial-text">The difference between a Designer and Developer, when it comes to design skills, is the difference between shooting a bullet and throwing it.</p>
-                                        <p class="testimonial-author">SCOTT HANSELMAN</p>
-                                    </div>
-                                    <div class="clear">
-                                    </div>
-                                </li>
-                                <li style="width: 500px;">
-                                    <div class="testimonial-content">
-                                        <p class="testimonial-text">To create anything–whether a short story or a magazine profile or a film or a sitcom–is to believe, if only momentarily, you are capable of magic.</p>
-                                        <p class="testimonial-author">TOM BISSEL</p>
-                                    </div>
-                                    <div class="clear"></div>
-                                </li>
-                                <li>
-                                    <div class="testimonial-content">
-                                        <p class="testimonial-text">As a profession, graphic designers have been shamefully remiss or ineffective about plying their craft for social or political betterment.</p>
-                                        <p class="testimonial-author">STEVEN HELLER</p>
-                                    </div>
-                                    <div class="clear"></div>
-                                </li>
-                            </ul>
-                        </div>
-                        <a id="text1_next" class="carousel_text_next" href="#"></a>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Video -->
-        <div id="video" class="section">
-            <div class="block content-1170 center-relative">
-                <div class="section-title-holder left">
-                    <div class="section-num">
-                        <span>
-                            05
-                        </span>
-                    </div>
-                    <h2 class="entry-title">OFFER</h2>
-                </div>
-                <div class="section-content-holder right">
-                    <div class="content-wrapper">
-                        <div class="content-title-holder">
-                            <p class="content-title">Video</p>
-                        </div>
-                        <div class="one_half ">
-                            Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum <strong>dolor sit amet</strong> consectetur est adipisicing elit, sed do eiusmod tempor
-                        </div>
-                        <div class="one_half last ">
-                            <span style="color: #FFBA42;"><strong>2001-2003 ·</strong></span> <span style="color: #727190;"><em>Art Studio Lorem Donec</em></span><br>
-                            <span style="color: #FFBA42;"><strong>2003-2006 ·</strong></span> <span style="color: #727190;"><em>Per Set Web Site</em></span><br>
-                            <span style="color: #FFBA42;"><strong>2006-2010 ·</strong></span> <span style="color: #727190;"><em>Setera Donec EstNunc</em></span><br>
-                            <span style="color: #FFBA42;"><strong>2010-2013 ·</strong></span> <span style="color: #727190;"><em>Studio Labore Tempor</em></span><br>
-                            <span style="color: #FFBA42;"><strong>2013-2016 ·</strong></span> <span style="color: #727190;"><em>Magna Ipsum Amet</em></span><br>
-                        </div><div class="clear"></div>
-                        <br>
-                        <br>
-                    </div>
-                    <div class="full-width ">
-                        <a class="video-popup-holder" href="https://vimeo.com/157276599" data-rel="prettyPhoto[gallery-video1]">
-                            <img class="thumb" src="demo-images/video_img.jpg" alt="">
-                            <img class="popup-play" src="images/icon_video.svg" alt="Play">
-                        </a>
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-
-            <div class="extra-content-full-width">
-                <script>
-                    var fwslider1_speed = "500";
-                    var fwslider1_auto = "false";
-                    var fwslider1_hover = "true";
-                    var fwslider1_start = "0";
-                    var fwslider1_width = "400";
-                    var fwslider1_num = "5";
-                </script>
-                <div class="fwslider1 fw-image-slider-holder list_carousel relative">
-                    <div class="caroufredsel_wrapper">
-                        <ul id="fwslider1" class="fw-image-slider">
-                            <li class="fw-slide">
-                                <img src="demo-images/icon_editing.png" alt="">
-                                <p class="fw-slide-text">Video Editing</p>
-                            </li>
-                            <li class="fw-slide">
-                                <img src="demo-images/icon_clear.png" alt="">
-                                <p class="fw-slide-text">Premium Cleer</p>
-                            </li>
-                            <li class="fw-slide">
-                                <img src="demo-images/icon_display.png" alt="">
-                                <p class="fw-slide-text">For All Displays</p>
-                            </li>
-                            <li class="fw-slide">
-                                <img src="demo-images/icon_time.png" alt="">
-                                <p class="fw-slide-text">Right On Time</p>
-                            </li>
-                            <li class="fw-slide">
-                                <img src="demo-images/icon_ideas.png" alt="">
-                                <p class="fw-slide-text">Innovative Ideas</p>
-                            </li>
-                            <li class="fw-slide">
-                                <img src="demo-images/icon_sound.png" alt="">
-                                <p class="fw-slide-text">Perfect Sound</p>
-                            </li>
-                            <li class="fw-slide">
-                                <img src="demo-images/icon_solution.png" alt="">
-                                <p class="fw-slide-text">3D Solution</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="clear"></div>
-                    <div id="fwslider1_fw_image_slide_pager" class="fw_carousel_pagination"></div>
-                </div>
-                <a id="fwslider1_fw_next" class="carousel_fw_next" href="#"></a>
-                <div class="clear"></div>
-            </div>
-        </div>
-
-
-        <!-- Skills -->
-
-        <div id="skills" class="section">
-            <div class="block content-1170 center-relative">
-                <div class="section-title-holder right">
-                    <div class="section-num">
-                        <span>06</span>
-                    </div>
-                    <h2 class="entry-title">EXPERTISE</h2>
-                </div>
-                <div class="section-content-holder left">
-                    <div class="content-wrapper">
-                        <div class="content-title-holder">
-                            <p class="content-title">Skills</p>
-                        </div>
-                        <p>Fusce suscipit, orci eget lobortis sodales, velit nunc tristique metus, in tristique odio ante id sem. Etiam in quam et sapien bibendum mollis. Morbi eget velit eros, quis imperdiet arcusere perdan. Nunc lorem justo, pellentesque ac egestas quis.</p>
-                        <br>
-                        <div class="progress_bar ">
-                            <div class="progress_bar_field_holder" style="width:81%;">
-                                <div class="progress_bar_title" style="color: #55B286">HTML</div>
-                                <div class="progress_bar_percent_text" style="color: #55B286">81%</div>
-                                <div class="progress_bar_field_perecent" style="background-color:#32DB8A;"></div>
-                            </div>
-                        </div>
-                        <div class="progress_bar ">
-                            <div class="progress_bar_field_holder" style="width:93%;">
-                                <div class="progress_bar_title" style="color: #E3A536">CSS</div>
-                                <div class="progress_bar_percent_text" style="color: #E3A536">93%</div>
-                                <div class="progress_bar_field_perecent" style="background-color:#FFBB42;"></div>
-                            </div>
-                        </div>
-                        <div class="progress_bar ">
-                            <div class="progress_bar_field_holder" style="width:72%;">
-                                <div class="progress_bar_title" style="color: #B24564">PSD</div>
-                                <div class="progress_bar_percent_text" style="color: #B24564">72%</div>
-                                <div class="progress_bar_field_perecent" style="background-color:#E74C78;"></div>
-                            </div>
-                        </div>
-                        <div class="progress_bar ">
-                            <div class="progress_bar_field_holder" style="width:99%;">
-                                <div class="progress_bar_title" style="color: #468ac7">DESIGN</div>
-                                <div class="progress_bar_percent_text" style="color: #468ac7">99%</div>
-                                <div class="progress_bar_field_perecent" style="background-color:#4C9EE7;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-        </div>
-
-        <!-- Contact -->
-        <div id="contact" class="section">
-            <div class="block content-1170 center-relative">
-                <div class="section-title-holder left">
-                    <div class="section-num">
-                        <span>
-                            07
-                        </span>
-                    </div>
-                    <h2 class="entry-title">Contact</h2>
-                </div>
-                <div class="section-content-holder right">
-                    <div class="content-wrapper">
-                        <div class="one_half ">
-                            <p>Consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est adipisicing elit, sed do eiusmod tempor.</p>
-                            <br>
-                            <p><strong><span style="color: #e64b77;">Incididunt ut dolore</span></strong> magna labore eiusmod. Dolor sit amet consectetur est adipisicing elit, sed do eiusmod.</p>
-                        </div>
-                        <div class="one_half last">
-                            <div class="contact-form">
-                                <p><input id="name" type="text" name="your-name" placeholder="Name"></p>
-                                <p><input id="contact-email" type="email" name="your-email" placeholder="Email"></p>
-                                <p><input id="subject" type="text" name="your-subject" placeholder="Subject"></p>
-                                <p><textarea id="message" name="your-message" placeholder="Message"></textarea></p>
-                                <p><input type="submit" onClick="SendMail()" value="SEND"></p>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="full-width">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4274.290564544589!2d-75.2952832049782!3d40.753669641460846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1444506658649" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-        </div>
-
-        <!-- Footer -->
-
-        <footer>
-            <div class="footer content-1170 center-relative">
+            <div class="footersocial wow fadeInUp" data-wow-duration="3s">
+                <!-- FOOTER SOCIAL ICONS START -->
                 <ul>
-                    <li class="copyright-footer">
-                        © 2018 All rights reserved. | Boxus Template by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                    </li>
-                    <li class="social-footer">
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-behance"></span></a>
-                        <a href="#"><span class="fa fa-dribbble"></span></a>
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-rss"></span></a>
-                    </li>
+                    <li><a href="http://facebook.com/MamunSrizon"><span class="icon-social-facebook"></span></a></li>
+                    <li><a href="http://twitter.com/MamunSrizon"><span class="icon-social-twitter"></span></a></li>
+                    <li><a href="#"><span class="icon-social-youtube"></span></a></li>
+                    <li><a href="http://dribbble.com/srizon"><span class="icon-social-dribbble"></span></a></li>
+                    <li><a href="#"><span class="icon-social-tumblr"></span></a></li>
                 </ul>
             </div>
-        </footer>
+            <!-- FOOTER SOCIAL ICONS END -->
+        </div>
+    </footer>
+    <!-- FOOTER END -->
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-        <!--Load JavaScript-->
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type='text/javascript' src='js/jquery.sticky-kit.min.js'></script>
-        <script type='text/javascript' src='js/jquery.smartmenus.min.js'></script>
-        <script type='text/javascript' src='js/jquery.sticky.js'></script>
-        <script type='text/javascript' src='js/jquery.dryMenu.js'></script>
-        <script type='text/javascript' src='js/isotope.pkgd.js'></script>
-        <script type='text/javascript' src='js/jquery.carouFredSel-6.2.0-packed.js'></script>
-        <script type='text/javascript' src='js/jquery.mousewheel.min.js'></script>
-        <script type='text/javascript' src='js/jquery.touchSwipe.min.js'></script>
-        <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
-        <script type='text/javascript' src='js/imagesloaded.pkgd.js'></script>
-        <script type='text/javascript' src='js/jquery.prettyPhoto.js'></script>
-        <script type='text/javascript' src='js/main.js'></script>
-    </body>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <!--Other necessary scripts-->
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jribbble.min.js"></script>
+    <script src="js/drifolio.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
 </html>
