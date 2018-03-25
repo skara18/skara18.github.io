@@ -1,6 +1,6 @@
 body
 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
@@ -269,8 +269,8 @@ body a:hover
 
 .top-logo
 {
-    width: 500px !important;
-    padding-top: 50px;
+    width: 700px !important;
+    padding-top: 10px;
 }
 
 h1.big-title
