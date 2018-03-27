@@ -356,6 +356,10 @@ hr {
 	color: #fff;
 	text-shadow: -1px 1px 1px #000;
 }
+.intro .slogan h3 {
+	color: #fff;
+	text-shadow: -1px 1px 1px #000;
+}
 
 @media (max-width: 768px) {
   .intro .slogan h2 {
